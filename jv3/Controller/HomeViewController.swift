@@ -9,7 +9,6 @@
 import UIKit
 import MediaPlayer
 class HomeViewController: UIViewController {
-    
     var isGameOn: Bool = false
     var gameIsReady: Bool {
         for level in Game.levels {
@@ -37,39 +36,21 @@ class HomeViewController: UIViewController {
         }
         Game.music = UserDefaults.standard.object(forKey: "musicGame") as? MPMediaEntityPersistentID ?? nil
         Game.endMusic = UserDefaults.standard.object(forKey: "musicEnd") as? MPMediaEntityPersistentID ?? nil
-        //UserDefaults.standard.set(4, forKey: "levelInProgress")
         Game.levelInProgress = UserDefaults.standard.integer(forKey: "levelInProgress")
         Game.playerDidSeeIntro = UserDefaults.standard.bool(forKey: "intro")
-        // Do any additional setup after loading the view.
     }
-    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         if gameIsReady {
             isGameOn = true
             performSegue(withIdentifier: "HomeToGame", sender: self)
-            
-            
-            
         } else {
             isGameOn = false
-            performSegue(withIdentifier: "HomeToGame", sender: self)
-            //performSegue(withIdentifier: "HomeToMusic", sender: self)
+            //performSegue(withIdentifier: "HomeToGame", sender: self)
+            performSegue(withIdentifier: "HomeToMusic", sender: self)
         }
     }
-    
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .portrait
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

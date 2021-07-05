@@ -41,17 +41,23 @@ class MusicTableViewCell: UITableViewCell {
             let predicate = MPMediaPropertyPredicate(value: musicID, forProperty: "persistentID")
             let query = MPMediaQuery(filterPredicates: [predicate])
             guard let collection = query.collections else { return }
-            let music = collection[0].items[0]
-            backgroundColor = #colorLiteral(red: 0.6325608527, green: 0.9714196623, blue: 0.5462919063, alpha: 1)
-            if let title = music.title {
-                if let artist = music.artist {
-                    musicTitle.text = "\(artist) - \(title)"
+            if collection.count > 0 && collection[0].items.count > 0 {
+                let music = collection[0].items[0]
+                backgroundColor = #colorLiteral(red: 0.6325608527, green: 0.9714196623, blue: 0.5462919063, alpha: 1)
+                if let title = music.title {
+                    if let artist = music.artist {
+                        musicTitle.text = "\(artist) - \(title)"
+                    } else {
+                        musicTitle.text = "\(title)"
+                    }
                 } else {
-                    musicTitle.text = "\(title)"
+                    musicTitle.text = "sans titre"
                 }
             } else {
-                musicTitle.text = "sans titre"
+                backgroundColor = #colorLiteral(red: 0.9714196623, green: 0.6408879472, blue: 0.5590537453, alpha: 1)
+                musicTitle.text = "une erreur est survenue, merci d'en chosir une autre"
             }
+            
         } else {
             backgroundColor = #colorLiteral(red: 0.9714196623, green: 0.6408879472, blue: 0.5590537453, alpha: 1)
             musicTitle.text = "aucune musique n'a été choisie"

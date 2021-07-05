@@ -12,6 +12,7 @@ import GameplayKit
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
     // MARK: - Properties
+    
     let game = Game()
     var level: Level?
     var character: CharacterSprite?
@@ -21,17 +22,14 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var camTimer: Timer?
     var gates: [GateSprite] = []
     var switchGates: [SwitchSprite] = []
-    
     var openTeleporters: [TeleporterSprite] = []
     var closedTeleporters: [TeleporterSprite] = []
-    
     var controllerDelegate: SceneToControllerDelegate?
-    
     var pauseButton: PauseSprite?
-    
     var background: SKSpriteNode?
     
     // MARK: - Add Sprite
+    
     func addSprite(lineIndex: Int, blockIndex: Int, block: Block) {
         let x = CGFloat(blockIndex)
         let y = CGFloat(lineIndex)
@@ -124,10 +122,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     // MARK: - didMove
     
     override func didMove(to view: SKView) {
-        
         level = Game.levels[Game.levelInProgress]
-        
-        
+        // level
         if let verifiedLevel = level {
             if verifiedLevel.lines.count > 0 {
                 for lineIndex in -6 ... -1 {
@@ -140,7 +136,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                         }
                     }
                 }
-                
                 for lineIndex in 0...verifiedLevel.lines.count - 1 {
                     let line = verifiedLevel.lines[lineIndex]
                     if line.blocks.count > 0 {
@@ -153,7 +148,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 }
             }
         }
-        
+        // gates
         if switchGates.count > 0 {
             for switchSprite in switchGates {
                 if gates.count > 0 {
@@ -172,7 +167,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 }
             }
         }
-        
+        // teleporters
         if openTeleporters.count > 0 {
             for teleporter in openTeleporters {
                 guard let openBlock = teleporter.block as? TeleporterBlock else { return }
@@ -187,26 +182,22 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             openTeleporters.removeAll()
             closedTeleporters.removeAll()
         }
-        
-        
-        
+        // cam
         let cam = SKCameraNode()
         cam.position = CGPoint(x: size.width / 2,
                                y: size.height / 2)
         addChild(cam)
         camera = cam
-        
+        // pause
         let pause = PauseSprite()
         pause.isHidden = true
         addChild(pause)
         pauseButton = pause
-        
         camTimer = Timer.scheduledTimer(timeInterval: 0.0025, target: self, selector: #selector(moveCam), userInfo: nil, repeats: true)
-        
         physicsWorld.contactDelegate = self
         
         backgroundColor = .white
-        
+        // background
         let environment = Game.levels[Game.levelInProgress].environment
         let background = SKSpriteNode(imageNamed: environment.background)
         background.size = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
@@ -215,6 +206,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         background.position = CGPoint(x: 0, y: 0)
         addChild(background)
         self.background = background
+        
+        // MARK: - Level 1 explanations
         
         if Game.playerDidSeeIntro == false {
             let playingPlayer = CustomizableProperties.shared.playingCharacterProperties
@@ -403,8 +396,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             textPresentation = []
             textHandler = start
         }
-        
-        
     }
     
     // MARK: - Touches
@@ -446,25 +437,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
     }
     
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-        //character.stopMoving()
-        
-    }
-    
-    override func update(_ currentTime: TimeInterval) {
-        // Called before each frame is rendered
-        
-        
-        
-    }
-    
     // MARK: - Character moves
     
     private func checkCharacterMoves(_ point: CGPoint) {
         if let character = self.character {
             if point.y > character.position.y {
-                //character.jump()
                 character.isJumping = true
             } else {
                 if point.x < character.position.x {
@@ -498,19 +475,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                             }
                         }
                     }
-                    
-//                    for index in 0...switchSprite.nodesOnSwitch.count - 1 {
-//                        let node = switchSprite.nodesOnSwitch[index]
-//                        if node.position.x > switchSprite.position.x - switchSprite.size.width / 2 && node.position.x < switchSprite.position.x + switchSprite.size.width / 2 && node.position.y < switchSprite.position.y + node.size.height * 1.25 {
-//                            remainingNodes.append(node)
-//                        }
-//                    }
                     switchSprite.nodesOnSwitch = remainingNodes
                 }
             }
         }
         if let character = self.character {
-            
             if character.position.y < -character.size.height * 5 {
                 guard let camTimer = self.camTimer else { return }
                 camTimer.invalidate()
@@ -532,14 +501,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 
             }
         }
-        
     }
     
     @objc private func endPause() {
         isPaused = false
     }
     
-    // MARK: TextPresentation
+    // MARK: - TextPresentation
     
     private func textPresentation(title: String, bubble: String, text: String, completion handlerA: (() -> Void)?) {
         textHandler = handlerA
@@ -606,7 +574,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         return text
     }
     
-    // MARK: - Gift
+    // MARK: - Gifts
+    
     func giftAppearance(_ giver: Sprite) {
         guard let level = self.level else {
             return
@@ -683,7 +652,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             }
         }
     }
-    
     func collisionSwitch(_ node: Sprite) {
         if let wall = node as? FragileWallSprite {
             characterDidCollideWithFragileWall(wall)
@@ -767,7 +735,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         } else {
             bullet.removeFromParent()
         }
-        
     }
     
     // MARK: - Gate & switch
@@ -824,7 +791,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
     }
     
-    // MARK: End Level
+    // MARK: - End Level
+    
     func characterLose() {
         guard let character = self.character else { return }
         character.removeFromParent()
@@ -896,10 +864,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 answer1()
                 })
             }
-            
         })
     }
 }
+
+// MARK: - Gun delegate
 
 extension GameScene: GunDelegate {
     func characterPosition() -> CGPoint? {
@@ -912,6 +881,5 @@ extension GameScene: GunDelegate {
         addChild(bullet)
         bullet.move()
     }
-    
 }
 

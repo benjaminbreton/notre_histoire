@@ -144,12 +144,12 @@
 		0309E49B24EAB0C20050F057 /* jv3 */ = {
 			isa = PBXGroup;
 			children = (
+				03932E8324EFB826005DC316 /* View */,
 				03B9E7CF24EFFA3300529B14 /* extensions */,
 				03B9E7C224EFF22200529B14 /* SpriteNodes */,
 				03932E8624EFB831005DC316 /* scene */,
 				03932E8524EFB82C005DC316 /* Supporting files */,
 				03932E8424EFB829005DC316 /* Controller */,
-				03932E8324EFB826005DC316 /* View */,
 				03932E8224EFB81E005DC316 /* Model */,
 			);
 			path = jv3;
