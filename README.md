@@ -7,12 +7,9 @@
 * [1b. Côté technique](#1b-côté-technique)
 
 [2. Méthode à suivre pour personnaliser le jeu](#2-personnalisation)
-    
-    [2a Personnaliser les graphismes](#2a-personnaliser-les-graphismes)
-    
-    [2b Personnaliser les niveaux](#2b-personnaliser-les-niveaux)
-    
-    [2c Personnaliser les éléments privés](#2c-personnaliser-les-éléments-privés)
+* [2a Personnaliser les graphismes](#2a-personnaliser-les-graphismes)
+* [2b Personnaliser les niveaux](#2b-personnaliser-les-niveaux)
+* [2c Personnaliser les éléments privés](#2c-personnaliser-les-éléments-privés)
 
 # 1 Ma demande en mariage
 
