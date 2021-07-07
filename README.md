@@ -6,10 +6,15 @@
 * [1a. Principe du jeu](#1a-principe)
 * [1b. Côté technique](#1b-côté-technique)
 
-[2. Méthode à suivre pour personnaliser le jeu](#2-personnalisation)
+[2. La méthode à suivre pour personnaliser le jeu](#2-la-personnalisation)
 * [2a. Personnaliser les graphismes](#2a-personnaliser-les-graphismes)
 * [2b. Personnaliser les niveaux](#2b-personnaliser-les-niveaux)
 * [2c. Personnaliser les éléments privés](#2c-personnaliser-les-éléments-privés)
+
+[3. Les consignes de jeu](#3-le-gameplay)
+* [3a. Présenter le jeu à l'élu(e) de votre coeur](#3a-présenter-le-jeu)
+* [3b. Jouer](#3b-jouer)
+* [3c. Débloquer le niveau 11](3c-débloquer-le-niveau-11)
 
 # 1 Ma demande en mariage
 
@@ -38,7 +43,7 @@ Dans le niveau 11, le personnage principal doit avancer jusqu'à ce qu'il tombe 
 
 Le jeu a été effectué grâce à *SpriteKit* et *GameplayKit*. Comme indiqué, il a été créé alors que je venais de commencer ma formation, il faudrait donc que je l'améliore grâce à mes connaissances acquises depuis, que je nettoie le code pour le rendre plus lisible, mais il fonctionne très bien en l'état.
 
-# 2 Personnalisation
+# 2 La personnalisation
 
 ## Sommaire
 
@@ -60,6 +65,32 @@ Le jeu a été effectué grâce à *SpriteKit* et *GameplayKit*. Comme indiqué,
 
 *en cours de rédaction...*
 
+# 3 Le gameplay
 
+## Sommaire
+
+[3a. Présenter le jeu à l'élu(e) de votre coeur](#3a-présenter-le-jeu)
+
+[3b. Jouer](#3b-jouer)
+
+[3c. Débloquer le niveau 11](3c-débloquer-le-niveau-11)
+
+## 3a Présenter le jeu
+
+*en cours de rédaction...*
+
+## 3b Jouer
+
+*en cours de rédaction...*
+
+## 3c Débloquer le niveau 11
+
+### 3c1 Quand
+
+*en cours de rédaction...*
+
+### 3c2 Comment
+
+*en cours de rédaction...*
 
 
