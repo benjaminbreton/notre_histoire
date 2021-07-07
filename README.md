@@ -3,10 +3,8 @@
 # Table des matières
 
 [1. Ma demande en mariage : principe du jeu](#1-ma-demande-en-mariage)
-    
-    [1a. Principe du jeu](#1a-principe)
-    
-    [1b. Côté technique](#1b-côté-technique)
+* [1a. Principe du jeu](#1a-principe)
+* [1b. Côté technique](#1b-côté-technique)
 
 [2. Méthode à suivre pour personnaliser le jeu](#2-personnalisation)
     
