@@ -43,7 +43,9 @@ Le jeu a été effectué grâce à *SpriteKit* et *GameplayKit*. Comme indiqué,
 ## Sommaire
 
 [2a Personnaliser les graphismes](#2a-personnaliser-les-graphismes)
+
 [2b Personnaliser les niveaux](#2b-personnaliser-les-niveaux)
+
 [2c Personnaliser les éléments privés](#2c-personnaliser-les-éléments-privés)
 
 ## 2a Personnaliser les graphismes
