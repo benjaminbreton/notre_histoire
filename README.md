@@ -99,7 +99,7 @@ Le titre et les souvenirs sont des éléments privés, donc se reporter à la pa
 
 Pour l'environnemment, il suffit d'aller dans l'init de la class CustomizableProperties (dans le fichier du même nom) et de personnaliser l'environnement de chaque niveau en indiquant .beach, .castle, .city, .forest, ou .garden.
 
-[Personnaliser l'environnement](READMEfiles/environment.png "Personnaliser l'environnement")
+![Personnaliser l'environnement](READMEfiles/environment.png "Personnaliser l'environnement")
 
 ## 2c Personnaliser les éléments privés
 
