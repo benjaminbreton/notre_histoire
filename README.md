@@ -93,9 +93,19 @@ Les monstres n'ont en soi aucun graphisme, il s'agit d'emojis. Les deux seuls ut
 
 ## 2b Personnaliser les niveaux
 
-*en cours de rédaction...*
+Les niveaux peuvent être personnalisés en en modifiant le titre, l'environnement et les souvenirs qui y sont liés.
+
+Le titre et les souvenirs sont des éléments privés, donc se reporter à la partie qui suit.
+
+Pour l'environnemment, il suffit d'aller dans l'init de la class CustomizableProperties (dans le fichier du même nom) et de personnaliser l'environnement de chaque niveau en indiquant .beach, .castle, .city, .forest, ou .garden.
+
+[Personnaliser l'environnement](READMEfiles/environment.png "Personnaliser l'environnement")
 
 ## 2c Personnaliser les éléments privés
+
+Pour tout ce qui est privé, il convient de créer un fichier PrivateProperties.swift.
+
+Ce fichier va contenir une classe PrivateProperties. Cette classe ne comportera que des variables statiques qui contiendront :
 
 *en cours de rédaction...*
 

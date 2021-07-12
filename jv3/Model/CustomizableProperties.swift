@@ -34,6 +34,7 @@ class CustomizableProperties {
             nickname: PrivateProperties.watchingCharacterNickname
         )
         var levelsProperties: [LevelProperties] = []
+        // level 1
         levelsProperties.append(
             LevelProperties(
                 title: PrivateProperties.level1Title,
@@ -45,6 +46,7 @@ class CustomizableProperties {
                             PrivateProperties.level1Gift5]
             )
         )
+        // level 2
         levelsProperties.append(
             LevelProperties(
                 title: PrivateProperties.level2Title,
@@ -56,6 +58,7 @@ class CustomizableProperties {
                             PrivateProperties.level2Gift5]
             )
         )
+        // level 3
         levelsProperties.append(
             LevelProperties(
                 title: PrivateProperties.level3Title,
@@ -67,6 +70,7 @@ class CustomizableProperties {
                             PrivateProperties.level3Gift5]
             )
         )
+        // level 4
         levelsProperties.append(
             LevelProperties(
                 title: PrivateProperties.level4Title,
@@ -78,6 +82,7 @@ class CustomizableProperties {
                             PrivateProperties.level4Gift5]
             )
         )
+        // level 5
         levelsProperties.append(
             LevelProperties(
                 title: PrivateProperties.level5Title,
@@ -89,6 +94,7 @@ class CustomizableProperties {
                             PrivateProperties.level5Gift5]
             )
         )
+        // level 6
         levelsProperties.append(
             LevelProperties(
                 title: PrivateProperties.level6Title,
@@ -100,6 +106,7 @@ class CustomizableProperties {
                             PrivateProperties.level6Gift5]
             )
         )
+        // level 7
         levelsProperties.append(
             LevelProperties(
                 title: PrivateProperties.level7Title,
@@ -111,6 +118,7 @@ class CustomizableProperties {
                             PrivateProperties.level7Gift5]
             )
         )
+        // level 8
         levelsProperties.append(
             LevelProperties(
                 title: PrivateProperties.level8Title,
@@ -122,6 +130,7 @@ class CustomizableProperties {
                             PrivateProperties.level8Gift5]
             )
         )
+        // level 9
         levelsProperties.append(
             LevelProperties(
                 title: PrivateProperties.level9Title,
@@ -133,6 +142,7 @@ class CustomizableProperties {
                             PrivateProperties.level9Gift5]
             )
         )
+        // level 10
         levelsProperties.append(
             LevelProperties(
                 title: PrivateProperties.level10Title,
