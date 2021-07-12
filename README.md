@@ -1,4 +1,10 @@
-*Bienvenue sur la page GitHub du jeu notre histoire.*
+*Bienvenue sur la page GitHub du jeu notre histoire - Welcome on the notre histoire game GitHub page.*
+
+Pour lire la version française 🇫🇷 du fichier README, veuillez cliquez [ici](#version-française).
+
+To read the english version 🇬🇧 of the README file, please click [here](#english-version)
+
+#### Version française
 
 # Table des matières
 
@@ -55,7 +61,31 @@ Le jeu a été effectué grâce à *SpriteKit* et *GameplayKit*. Comme indiqué,
 
 ## 2a Personnaliser les graphismes
 
+Plusieurs graphismes peuvent être personnalisés, mais cela n'est pas pour autant obligatoire.
+Il est cependant conseillé de [personnaliser les personnages](#2a1-personnaliser-le-graphisme-des-personnages), mais [personnaliser les lieux](#2a2-personnaliser-le-graphisme-des-lieux) [et les monstres](#2a3-personnaliser-le-graphisme-des-monstres) est également possible.
+
+De manière générale, pour personnaliser les graphismes, il suffit de modifier l'image correspondante dans les assets en gardant les mêmes dimensions et le même nom de fichier.
+
+Voici néanmoins quelques précisions
+
+### 2a1 Personnaliser le graphisme des personnages
+
+![Images du héros du jeu](READMEfiles/characters.png "Images du héros du jeu")
+/Users/benjaminbreton/Desktop/Capture d’écran 2021-07-12 à 16.48.41.png
+
+Deux personnages peuvent être personnalisés : le héros et la personne à délivrer.
+
+Le héros est représenté par les images commençant par "character", la personne à délivrer par "character2".
+
+Chacun possède plusieurs images les représentant en train de marcher ou immobiles.
+
+### 2a2 Personnaliser le graphisme des lieux
+
+
+### 2a3 Personnaliser le graphisme des monstres
+
 *en cours de rédaction...*
+
 
 ## 2b Personnaliser les niveaux
 
@@ -92,5 +122,9 @@ Le jeu a été effectué grâce à *SpriteKit* et *GameplayKit*. Comme indiqué,
 ### 3c2 Comment
 
 *en cours de rédaction...*
+
+#### English version
+
+*in progress...*
 
 
