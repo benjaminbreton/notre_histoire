@@ -71,7 +71,6 @@ Voici néanmoins quelques précisions
 ### 2a1 Personnaliser le graphisme des personnages
 
 ![Images du héros du jeu](READMEfiles/characters.png "Images du héros du jeu")
-/Users/benjaminbreton/Desktop/Capture d’écran 2021-07-12 à 16.48.41.png
 
 Deux personnages peuvent être personnalisés : le héros et la personne à délivrer.
 
@@ -81,10 +80,15 @@ Chacun possède plusieurs images les représentant en train de marcher ou immobi
 
 ### 2a2 Personnaliser le graphisme des lieux
 
+![Images du lieu Beach](READMEfiles/beach.png "Images du lieu Beach")
+
+Il existe 5 lieux possibles, appelés Environment dans le code : beach, castle, city, forest, garden.
+
+Chacun de ces lieux a plusieurs images, représenant le fond du niveau, les blocs de mur, les blocs au sol, etc.
 
 ### 2a3 Personnaliser le graphisme des monstres
 
-*en cours de rédaction...*
+Les monstres n'ont en soi aucun graphisme, il s'agit d'emojis. Les deux seuls utilisés sont modifiables dans le fichier MonsterSprite.swift.
 
 
 ## 2b Personnaliser les niveaux
