@@ -1,10 +1,11 @@
 *Bienvenue sur la page GitHub du jeu notre histoire - Welcome on the notre histoire game GitHub page.*
 
-Pour lire la version française 🇫🇷 du fichier README, veuillez cliquez [ici](#🇫🇷).
+Pour lire la version française 🇫🇷 du fichier README, veuillez cliquez [ici](#version-française).
 
-To read the english version 🇬🇧 of the README file, please click [here](#🇬🇧)
+To read the english version 🇬🇧 of the README file, please click [here](#english-version)
 
 # 🇫🇷
+### version française
 
 # Table des matières
 
@@ -138,6 +139,8 @@ Ce fichier va contenir une classe PrivateProperties. Cette classe ne comportera 
 *en cours de rédaction...*
 
 # 🇬🇧
+
+### english version
 
 *in progress...*
 
