@@ -182,9 +182,13 @@ Pour le niveau 11, le personnage de votre bien-aimé(e) sera avancé jusqu'à re
 Le dialogue, le voici :
 
 Votre bien-aimé(e): "Euh... c'est tout ?"
+
 Vous: "Bah non, le niveau ne fait que commencer !"
+
 Votre bien-aimé(e): "Ok... Mais du coup je n'ai pas à te sortir d'une cage dans ce niveau ?"
+
 Vous: "En effet. Ce niveau se joue à deux."
+
 Vous: "Pour la suite, c'est au vrai (Votre nom) de t'expliquer comment se joue ce niveau. Quand il te le dira, appuie sur l'écran pour lancer le niveau. Mais seulement quand il te le dira !"
 
 Et là c'est à vous... Vous devez donc faire une petite introduction à votre demande. Quand c'est terminé, dites-lui d'appuyer sur l'écran.
