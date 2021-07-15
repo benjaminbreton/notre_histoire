@@ -19,9 +19,10 @@ To read the english version 🇬🇧 of the README file, please click [here](#en
 * [2c. Personnaliser les éléments privés](#2c-personnaliser-les-éléments-privés)
 
 [3. Les consignes de jeu](#3-le-gameplay)
-* [3a. Présenter le jeu à l'élu(e) de votre coeur](#3a-présenter-le-jeu)
-* [3b. Jouer](#3b-jouer)
-* [3c. Débloquer le niveau 11](3c-débloquer-le-niveau-11)
+* [3a. Avant toute chose](#3a-avant-toute-chose)
+* [3b. Présenter le jeu à l'élu(e) de votre coeur](#3b-présenter-le-jeu)
+* [3c. Jouer](#3c-jouer)
+* [3d. Débloquer le niveau 11](3d-débloquer-le-niveau-11)
 
 # 1 Ma demande en mariage
 
