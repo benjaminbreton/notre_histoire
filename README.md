@@ -139,7 +139,7 @@ ATTENTION : une fois toutes les musiques choisies, vous ne pourrez plus les modi
 Le jeu utilise Apple Music. 
 Le simulateur ne fonctionne pas avec la fonction musique de l'application.
 
-### 3a1b ... ou désactiver les musiques
+#### 3a1b ... ou désactiver les musiques
 
 Si vous ne souhaitez pas choisir et donc utiliser de la musique dans le jeu, ou si vous souhaitez lancer l'application sur le simulateur pour le tester, il convient de désactiver le choix des musiques dans l'application. 
 
