@@ -105,7 +105,7 @@ Pour l'environnemment, il suffit d'aller dans l'init de la class *CustomizablePr
 
 Pour tout ce qui est privé, il convient de créer un fichier *PrivateProperties.swift*.
 
-![Un aperçu de la classe PrivateProperties](READMEfiles/environment.png "Un aperçu de la classe PrivateProperties")
+![Un aperçu de la classe PrivateProperties](READMEfiles/privateProperties.png "Un aperçu de la classe PrivateProperties")
 
 Ce fichier va contenir une classe PrivateProperties. Cette classe ne comportera que des variables statiques qui contiendront :
 - le prénom des personnages via deux variables de type *String* : *playingCharacterName* pour le personnage qui joue, et *watchingCharacterName* pour le personnage qui est enfermé ;
@@ -143,7 +143,7 @@ Le simulateur ne fonctionne pas avec la fonction musique de l'application.
 
 Si vous ne souhaitez pas choisir et donc utiliser de la musique dans le jeu, ou si vous souhaitez lancer l'application sur le simulateur pour le tester, il convient de désactiver le choix des musiques dans l'application. 
 
-![Les lignes permettant d'activer ou de désactiver le choix de musique](READMEfiles/environment.png "Les lignes permettant d'activer ou de désactiver le choix de musique")
+![Les lignes permettant d'activer ou de désactiver le choix de musique](READMEfiles/homeSegue.png "Les lignes permettant d'activer ou de désactiver le choix de musique")
 
 Pour cela, rendez-vous sur le fichier *HomeViewController.swift* :
 - pour activer le choix des musiques : la ligne 49 doit être désactivée, la ligne 50 doit être activée ;
